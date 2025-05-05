@@ -5,24 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Simple HTML Document</title>
-    
+    <style>
+    ul{
+      list-style-type: none;
+      margin: 0;
+     padding: 0;
+     background-color:white;
+     display: inline;
+    }
+    li {
+  display: inline;
+}
+
+li a {
+  color: blue;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+nav{
+  display:inline;
+} 
+#firstdiv{
+  display: inline;
+}
+
+    </style>
 </head>
 <body>
     <!-- MAIN HEADER -->
     <header>
 
-      <div> 
-        <a href="#">Logo</a>
-      </div>  
-
+      <div id="firstdiv"><a href="#">Logo</a></div>
       <nav>
-        <ul>
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="./week-1/about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
+          </ul>
+        </nav>
+     
     </header>
     <!-- MAIN HEADER ENDS -->
 </body>
