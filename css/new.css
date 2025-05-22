@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+input{
+    display: block;
+    max-width: 240px;
+     border:none;
+     padding:1rem;
+     margin: 16px;
+}
+input[type="text"]{
+   border-bottom: 1px solid red;
+}
+input[type="email"]{
+    border-bottom: 1px solid blue;
+}
+input:hover{
+    width: 272px;
+    border-bottom:1px solid rgba(11, 206, 220, 0.345);
+}
+input:focus{
+   background-color: aquamarine;
+    outline:none;
+}
