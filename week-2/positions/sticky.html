@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Position</title>
+ <style>
+        div.sticky{
+           border: 3px solid#4CAF50;
+            position:sticky;  
+            background-color: #CAE8CA;
+            padding: 8px;
+            top: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sticky Position</h1>
+    <h2>Sticky Position</h2>
     <a href="index.html">Positions</a>
-</body>
-</html>
+    <p>try to scroll inside this frame to understand how sticky position work</p>
+    <div class="sticky">This div is positioned sticky</div>
+    <div style="padding-bottom: 2000px;">
+        <p>An element with position sticky is based on the user's scroll position. A sticky element toggle between relative and fixed depending on the scroll position . It is positioned relative until a given offset position is met in the view port then it sticks in place . Note: You must specify at least one of top right bottom left for sticky position to work
+        </p>
+    </div>

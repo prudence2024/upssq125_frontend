@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absolute postion</title>
+    <style>
+        div.container{
+            position: relative;
+            width: 600px;
+           right:0;
+            height: 200px;
+            border:3px solid red;
+        }
+        div.absolute{
+           border: 3px solid #73AD21;
+            position:absolute; 
+            left:170px;
+            bottom:80px; 
+        }
+    </style>
 </head>
 <body>
     <h1>Absolute postion</h1>
     <a href="index.html">Positions</a>
+    <p>An element positioned absolute is positioned relative to the nearest position ancestor.</p>
+    <div class="container">
+        <div class="absolute">This element is positioned absolute</div>
+    </div>
 </body>
 </html>
