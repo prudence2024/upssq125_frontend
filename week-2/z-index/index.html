@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Z-index Property</title>
+    <style>
+        span{
+            color: red;
+        }
+         #tree_img{
+            position:absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
-    
+    <h2>Z-index Property</h2>
+    <p>When elements are positioned they can overlap </p>
+    <p>The <span><strong>Z-INDEX</strong></span>  property specify the stack order property of an element.</p>
+    <p>An element can have either a positive or negative stack order.</p>
+    <!-- <div class="div1"> -->
+        <p>This is an iroko tree in Aminah village</p>
+        <img id="tree_img" src="/assets/img_tree.png" alt="image of tree">
+        <p>Because the image has a z-index of -1 it will be placed behind the text, this shows that the higher the z-index the higher it will be in the stack and the lower te z-index, the lower it will be in the stack.</p>
+    <!-- </div> -->
 </body>
 </html>

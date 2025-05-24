@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .padding-1{
+         padding: 1rem;
+        }
+        .text-color{
+            color:white;
+        }
+        .black{
+            background-color: rgb(0, 0, 0);
+        }
+        .blue{
+            background-color: blue;
+        }
+        .box-100{
+            width:100px;
+            height:100px;
+        }
+        .box-200{
+            width:100px;
+            height:100vh;
+        }
+        .boxvh{
+            height:98vh;
+        }
+        .boxvw{
+            width:100vw;
+        }
+        .float-right{
+           float:right;
+        }
+        .float-left{
+           float:left;
+        }
+        .purple{
+            background-color: rgb(159, 41, 159);
+        }
+        .clear-both{
+            clear:both;
+        }
+        .padding-new{
+            padding:1.5rem;
+        }
+        .adjust{
+            width:90vw;
+            height:100vh;
+        }
+        .clear-right{
+          clear: right;
+        }
+        .clear-left{
+          clear: left;
+        }
+         .padding-3{
+            padding: 8px;
+        } 
+    </style>
+</head>
+<body>
+    <!-- <h1>Css Float Property</h1> -->
+    <!-- <p>The float property allows us to position elements in the left and right of the screen</p> -->
+    <div class="black padding-new text-color boxvw float-right">sugar</div>
+    <div class="blue padding-1 text-color box-200  clear-both float-left">sell am</div>
+    <div class="purple padding-1 text-color float-left adjust ">
+        <p class="padding-3">The css float property specifies how an element will FLOAT</p>
+        <p class="padding-3">The css cleared property specify what elements can float beside the cleared element and on which side. </p>
+        <h2>The Float Property</h2>
+        <p>The float property is used for positioning and formatting content, for example when u want an image to float left in a container.</p>
+        <p>The float property can have one of the following values:</p>
+        <ul>
+            <li>Left- The elements float to the left of its container.</li>
+            <li>Right- The elements float to the right of its container.</li>
+            <li>None- The elements does not float, it is the default property.</li>
+            <li>inherit- The element inherits the float value of its parent.</li>
+        </ul>
+        <p>In its simplest use the float property is used to wrap text around images.</p>
+        <div><img src="/assets/pineapple.jpg" alt="pineapple picture">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, rerum!</div>
+    </div>
+</body>
+</html> 
