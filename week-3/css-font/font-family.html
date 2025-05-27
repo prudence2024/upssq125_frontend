@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font-Family</title>
+    <style>
+        .container-grey{
+            background-color:grey;
+            padding: 15px;
+            width:500px;
+            height:300px;
+            align-content: center;
+            margin:auto;
+
+        }
+        .container-light-border-l{
+            background-color: white;
+            border: none ;
+            border-left-width: thick;
+            border-left-style:solid;
+            border-left-color:green;
+            padding:15px;
+        }
+        .br{
+            padding-bottom:15px;
+          }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <h1>CSS Font-Family Property</h1>
+    <p>In CSS we use the font-family property to specify the font of the text.</p>
+        <i><strong>Note:</strong>If the font name is more than one word, it must be in quotation marks, like:"Times New Roman"</i>
+    <p><strong>Tip:</strong>The Font-family property should hold several font name as a fall back system. The browser will try to use the first family in the list, if it is not available it will try the others.</p>
+    <div class="container-grey">
+        <h3>Example</h3>
+        <br>
+        <div class="container-light-border-l">
+            .p1{
+                <br>
+            font-family:"Times New Roman", Times , Serif
+            ;<br>} 
+            <br>
+            .p2{
+                <br>
+            font-family:Ariel, Helvetica , Sans-Serif;<br>} 
+            <br>
+            .p3{
+                <br>
+            font-family:"Lucida console" "Courier New", Monospace;} 
+            <br>
+        </div> 
+            <br>
+        <a href="example.html" class="btn-accent">View Example</a>
+    </div>
+   
+</body>
+</html>
