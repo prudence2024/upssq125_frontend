@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                 /* border-collapse: collapse; */
+                 width: 60%;
+                 font-size: medium;
+                 color: blue;
+                 padding-top: 12px;
+                 padding-bottom: 12px;
+                 text-align: left;
+                 /* margin: 150px; */
+        }
+        .table td{
+            border: 1px solid black;
+            padding: 8px;
+            color:blue;
+        }
+        .table th{
+            border: 1px solid black;
+            background-color: blue;
+            padding: 8px;
+            color: white;
+        }
+        .table tr:hover{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Css Media Query</h1>
+    <p>The @media rule, introduced in CSS2 , made it possible to define different style rules for different media types.</p>
+    <p>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device they look at the capability of the device.</p>
+    <p>Media queries can be used to check many things such as:</p>
+    <ul>
+        <li>Width and Height of the view port</li>
+        <li>Width and Height of the device</li>
+        <li>Orientation of the view port (Landscape or portrait).</li>
+        <li>Orientation of the device (Landscape or portrait).</li>
+        <li>Resolution of the device.</li>
+    </ul>
+
+    <p> Using Media queries is a popular technique for delivering a tailored stylesheet to desktops, laptops, tablet, and mobile phones such as iphones and androids</p>
+
+     <h2>CSS Media Types</h2>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>All</td>
+                <td>Use for all media types</td>
+            </tr>
+
+            <tr>
+                <td>Print</td>
+                <td>Used for Page materials and document viewed on the screen in print mode</td>
+            </tr>
+
+            <tr>
+                <td>Screen</td>
+                <td>Used for Computer screens, Tablets, smartphones , etc.</td>
+            </tr>
+
+            <tr>
+                <td>Speech</td>
+                <td>Used for Speech Synthesiazers</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2>CSS Common Media Queries</h2>
+
+    <table>
+        
+    </table>
+</body>
+</html>
