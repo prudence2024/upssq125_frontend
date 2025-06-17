@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-4</title>
+    <style>
+        * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+             }
+
+             .navlist>.nav-item {
+              list-style: none;
+               padding: 1em;
+               margin: 1em;
+             }
+            .nav-item>a {
+             text-decoration: none;
+              color: rgb(98, 200, 200);
+             }
+             .header{
+               display: flex;
+              /* flex-direction: column; */
+              justify-content: space-between;
+              padding: 1em;
+              align-items: center;
+                    }
+             .navbar {
+              position: fixed;
+              background-color: rgb(14, 41, 41);
+              transition: transform 250ms ease-in-out;
+              transform: translateX(100%);
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              right: 0;
+              z-index: 100%;
+                     }
+             .toggle {
+             padding: 0.5em;
+             cursor: pointer;
+             background-color: transparent;
+             border: none;
+             /* position: absolute;
+              right: 1em;
+              top: 1em; */
+                     }
+             .harmburger {
+              display: block;
+              position: relative;
+                         }
+             .harmburger,
+             .harmburger::before,
+             .harmburger::after {
+                         display: block;
+                         border-radius: 1em;
+                         background-color: rgb(50, 21, 21);
+                         width: 2em;
+                         height: 3px;
+                         right: 1em;
+                         transition: transform 250ms ease-in-out;
+                                }
+            .harmburger::before,
+            .harmburger::after {
+
+                 content: "";
+                 position: absolute;
+                 left: 0;
+                 right: 0;
+                               }
+            .harmburger::before {
+                        top: 6px;
+}
+.harmburger::after {
+    bottom: 6px;
+}
+/* media query 1 */
+@media (min-width:882px) {
+    .navbar {
+        transform: translateX(0);
+        position: static;
+        background-color: transparent;
+    }
+    .nav-item>a {
+        color: rgb(98, 200, 200);
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .navlist {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+    }
+    .harmburger,
+    .harmburger::before,
+    .harmburger::after {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+
+     <header class="header">
+        <div>
+            <h2>Week-4</h2>
+        </div>
+        <button class="toggle" aria-label="toggle navigation">
+            <span class="harmburger"></span>
+        </button>
+        <nav class="navbar">
+            <ul class="navlist">
+                <li class="nav-item"><a href="#">Transitions</a></li>
+                <li class="nav-item"><a href="#">Animation</a></li>
+                <li class="nav-item"><a href="#">JavaScript</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <section>
+         <h1 class="hero-heading">Learning Objectives Weekly</h1>
+        <div>
+            <p>We will cover the following:</p>
+            <ul>
+                <li><a href="#">Css Transitions</a></li>
+                <li><a href="#">Css Animations</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div>
+     </section>
+</body>
+</html>

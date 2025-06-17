@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/grid.css">
+    <title>CSS Grid</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+        Grid
+    </div>
+    <div class="links colour-white">
+         <ul>
+            <li><a href="#" class="color-white padding-links">layout</a></li>
+            <li><a href="#" class="color-white padding-links">Col-rows</a></li>
+            <li><a href="#" class="color-white padding-links">Grid-area</a></li>
+        </ul>
+    </div>
+   </header>
+   <section class="section color-white">
+    <h1 class="section__title">CSS Grid layout</h1>
+    <p class="para">The Grid layout module offers a grid-base layout system with rows and colums</p>
+    <p class="para">The grid layout module makesit easy to design complex and responsive web pages withiout using float and positioning</p>
+    <div class="container">
+        <div class="heading">
+            <h2>My heading</h2>
+        </div>
+        <div class="sidebar">
+            <a href="#" class="color-white">Link 1</a>
+            <br>
+            <a href="#" class="color-white ">Link 2</a>
+            <br>
+            <a href="#" class="color-white ">Link 3</a>
+        </div>
+        <div class="content">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor incidunt officiis quibusdam necessitatibus sed neque illo earum nesciunt quia mollitia, dolores voluptatibus atque repellendus?</p>
+        </div>
+        <!-- <div class="image">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eos?
+        </div> -->
+        <div class="footer">footer</div>
+    </div>
+   </section>
+   <section class="section">
+    <h2>CSS Grid componet</h2>
+    <p>A grid always consist of :</p>
+    <ul>
+        <li>A grid container which is the parent container</li>
+        <li>A grid item -items inside the container</li>
+    </ul>
+    <hr>
+    <h2>Grid container and grid item</h2>
+    <p>A grid layout consist of a parent element (The grid container),with one or more grid items</p>
+    <p>All direct children of a grid container automaticaly becomes grid items</p>
+    <hr>
+    <br>
+    <p>A grid layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em></p>
+    <p>Direct child element or elements of a grid container automaticaly becomes grid items</p>
+    <div class="container-fluid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+   </section>
+   <section class="section-example">
+    <div class="breakpoint-free">
+        <h3>Break point free</h3>
+        <p>Grid layout allows you to create responsive design without the need of a media quarre, adapting to different screen size automaticaly</p>
+        <p>It is a grid system that can adjust the layout based on the available space making it easier to create flexible and adaptive design</p>
+    </div>
+    <div class="gridexmple">
+        <h3>Grid example</h3>
+        <div class="container-fluid-exmple padding-card">
+            <div class="grid">
+                <div class="one text-colour padding-card bg-colour text-align-center">1</div>
+                <div class="two text-colour padding-card bg-colour text-align-center">2</div>
+                <div class="three text-colour padding-card bg-colour text-align-center">3</div>
+                <div class="four text-colour padding-card bg-colour text-align-center">4</div>
+                <div class="five text-colour padding-card bg-colour text-align-center">5</div>
+                <div class="six text-colour padding-card bg-colour text-align-center">
+                    6
+                </div>
+                <div class="seven text-colour padding-card bg-colour text-align-center">
+                    7
+                </div>
+                <div class="eight text-colour padding-card bg-colour text-align-center">8</div>
+            </div>
+        </div>
+    </div>
+   </section>
+</body>
+</html>

@@ -30,6 +30,9 @@
         .table tr:hover{
             background-color: black;
         }
+        .syntax-example{
+            border: 1px solid grey;
+        }
 
     </style>
 </head>
@@ -83,10 +86,76 @@
         </tbody>
     </table>
 
-    <h2>CSS Common Media Queries</h2>
+    <h2>CSS Common Media Features</h2>
 
-    <table>
+    <table class="table">
+
+       <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Description</th>
+        </tr>
+       </thead>
+
+       <tbody>
         
+        <tr>
+            <td>Orientation</td>
+            <td>Orientation of the viewport (Landscape or portrait)</td>
+        </tr>
+
+        <tr>
+            <td>Max Height</td>
+            <td>Maximum Height of the viewport</td>
+        </tr>
+
+        <tr>
+            <td>Min Height</td>
+            <td>Minimum Height of the viewport</td>
+        </tr>
+        
+        <tr>
+            <td>Min Width</td>
+            <td>Maximum width of the viewport</td>
+        </tr>
+
+        <tr>
+            <td>Width</td>
+            <td>Width of the viewport including the scroll bar</td>
+        </tr>
+
+        <tr>
+            <td>Height</td>
+            <td>Height of the viewport including the scroll bar</td>
+        </tr>
+
+       </tbody>
+
     </table>
+    <br>
+    <h2>Media Query Syntax</h2>
+     <p>This are the set of rules taht guide how media queries are written</p>
+     <div class="syntax-example">
+        <pre>
+            <code>
+               @media not | only media-type and (media-feature) and (media-feature) {
+                /*CSS rules */
+               }
+            </code>
+        </pre>
+    </div>
+    
+    <div class="note">
+         <p>The media type is optional (if it is omitted it will be set to all) However, if you use not or only you must also specify the media type</p>
+         <p>The result of the query is true if the specified media type matches the type of device the document is being displayed on all media features in the media are true.When a media query is true, the corresponding stylesheet or style rules are applied following the normal cascading rules.</p>
+        <p>Meaning of the <i>not</i>, <i>only</i> and <i>and</i> keyword</p>
+        <ul>
+            <li><strong>Not</strong>:Not negates the media query meaning the styles will apply if the media query is false.</li>
+            <li><strong>Only</strong>:</li>
+            <li><strong>And</strong>:</li>
+        </ul>
+
+     </div>
+    
 </body>
 </html>
