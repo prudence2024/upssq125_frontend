@@ -1,0 +1,73 @@
+:root{
+    /* COLORS */
+    --clr-primary-400:263 55% 52%;
+    --clr-secondary-400:217 19% 35%;
+    --clr-secondary-500:219 29% 14%;
+    --clr-neutral-100:0 0% 100%;
+    --clr-neutral-200:210 46% 95%;
+    --clr-neutral-300:0 0% 81%;
+
+    /* FONT FAMILY */
+    --ff-primary:"Barlo Semi Condensed, sans-serif";
+
+    /* FONT WEIGHT */
+    --fw-400:500;
+    --fw-700:600;
+
+    /* FONT SIZE */
+    --fs-300:0.6875rem;
+    --fs-400:0.8125rem;
+    --fs-500:1.25rem;  
+}
+   /* BOX-SIZING BORDER-BOX */
+
+    *, *::before *::after{
+    box-sizing: border-box;
+    }
+
+    body, h1, h2, h3, h4, p, blockquote, figure, dl, dd {
+        margin: 0;
+    }
+
+    ul[role="list"], ol[role="list"]{
+        list-style: none;
+    }
+
+    html:focus-within{
+        scroll-behavior: smooth;
+    }
+    /* SET CORE BODY DEFAULT */
+    body{
+        min-height: 100vh;
+        /* convert ur html text and other element into visible content in the browser */
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+   } 
+   /* ANCHOR ELEMENT THAT DONT HAVE A CLASS GET THEIR DEFAULT STYLES */
+   a:not([class]){
+    text-decoration-skip-ink: auto;
+
+   }
+   img, picture{
+    max-width: 100%;
+    display: block;
+   }
+
+   /* INHERITS FONTS FOR INPUT AND BUTTONS */
+   input, button, textarea, select{
+    font:inherit;
+   }
+
+   /* REMOVE ALL ANMATION TRANSITION AND SMOOTH SCROLL FOR PEOPLE THAT PREFER NOT TO SEE THEM */
+   @media (prefers-reduced-motion:reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+    *, *::before , *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+   }
