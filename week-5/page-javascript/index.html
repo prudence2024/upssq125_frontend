@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page-javascript</title>
+        <script type="module" src="index.js"></script>
+</head>
+<body>
+    <h2>How to add Javascript to your page</h2>
+    <p>Javascript is applied to your Html page in a similar way to css. Whereas css uses link element to apply external stylesheets and style element to apply internal stylesheet to Html, Javascript only need one friend in the world of html <span>- The script element.</span></p>
+    <br>
+    <p><b>Note:</b> you can use to scrimba setting up your javascript interactive file to learn the different way to add javascript to html file. </p>
+    <h3>Internal Javascript</h3>
+    <button type="button">Click me</button>
+    <ol>
+        <li></li>
+    </ol>
+    <hr>
+    
+    <h3>External Javascript</h3>
+    <p>This works well but what if we want to put our javascript in an external file. Follow the steeps below.
+    </p>
+    <ol>
+        <li>Create an index.html file in the sam directory as your html file and call index.html. Make sure it has a .js extension as this is how it will be recognised as a javascript</li>
+        <li>Remove your current script element at the bottom of the body element before the closing body elemnet taghead element
+        </li>
+        <li>Inside the index.js add the script received via slack</li>
+        <li>Save and refresh your browser</li>
+    </ol>
+    <hr>
+    <br>
+    
+    <h3>Inline JavaScript handlers</h3>
+    <p>Sometimes ,JavaScript can be included inside the html element this is called inline javascript</p>
+    <button type="button" >Click me!!</button>
+    <p>This demonstrates exactly the same functionality as the previous two section except that the button element include an inline <i>onclick handler</i>to make the function rules.</p>
+    <p>Note: make sure u remove the type module of the script tag in the head element otherwise it will not work.</p>
+    <p><strong>Note:</strong> pls don't try this, it is bad practice to pollute ur html with javascript and it is inefficient<span>-</span>you will have to includer the <b>onclick="createParagraph()"</b> on every buttton u want the javascript to apply to.</p>
+    <br>
+    <h3>Using addEventListener</h3>
+    <p>Instead of including javascript to ur html, use pure javascript construct. The querySelectorAll()  allows you to select all buttons on the page. you can then look through the button asssigning the handler for each using addEventListener()</p>
+    <br>
+    <h3>Script Loading Handlers</h3>
+    <p>All the html on the page is loaded in the other in which it appers. If you are using javascript to manipulate element in a page or more accurately your code wont work if the javascript is loaded and parsed(changing) before the html you are trying to do something to</p>
+    <br>
+    <p>There are a few different strategies to make sure your javascript only runs after the html is parsed</p>
+    
+    <ul>
+        <li>In the internal javscript example above, the script element is placed at the bottom of the body of the document and therefore only runs after the rest of the html body is parsed.</li>
+        <li>In the external javascript example above, the script elementd is placed of the document before the html body is parsed. But because we are using type "module" the code is treated as a </li> <b>module</b> and the browser waits for all html to be processed before executing javascript module (You can also place external script at the bottom of the body. But if there is a lot of html and the network is slow it may take a lot of time before the browser can even start fetching and loading the script so placing the external script in the head is better)</li>
+        <li> If you still want to use non module script in the document head, which could block the whole page from displaying and could cause errors because its executes before the html is passed: 
+        </li>
+    </ul>
+    
+    <ul>
+        <li>For external script you should add the defer (or if you dont need the html to be ready, you can async attribute on the script) </li>
+        <li>For internal script,  you should wrap the code in a domcontentloadedeventlistner</li>
+    </ul>
+    
+    
+    
+    
+    
+</body>
+</html>
