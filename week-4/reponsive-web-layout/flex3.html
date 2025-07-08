@@ -1,4 +1,12 @@
-*{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,6 +53,7 @@ a{
 .logRegNav a{
     display: block;
     padding-bottom: 1rem;
+    background-color: blue;
 }
 /* .nav__link2{
     border:1px solid black;
@@ -99,17 +108,31 @@ a{
     opacity: 0;
 }
 @media (min-width:992px){
+    .main-header{
+    justify-content: normal;
+    align-items: center;
+    
+}
     .menu{
-        position:relative;
-        margin-left: auto;
+        position:static;
+        margin-left: 4px;
         margin-right: auto;
+        top:auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        transform: translateX(0%);
     }
     .nav__list{
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         gap:1rem;
-        padding-top: 10px;
 
     }
     .hamburger{
@@ -120,8 +143,49 @@ a{
     }
     .logRegHeader{
         display: flex;
-        place-items: end;
+        justify-content:flex-end;
+        align-items: center;
         gap: 1rem;
     }
+    .logRegHeader a{
+        background-color: rgb(0, 255, 64);
+        padding:10px 20px;
+        border-radius: 5px;
+    }
+    .nav__items{
+    margin-bottom: auto;
+}
 
 }
+
+</style>
+<body>
+    <header class="main-header">
+       <div class="logo">
+          <h1>
+            Logo
+          </h1>
+       </div> 
+       <input type="checkbox" id="checkbox-menu" hidden>
+       <label class="menu-container" for="checkbox-menu">
+        <span class="hamburger"></span>
+       </label>
+       <nav class="menu">
+        <ul class="nav__list">
+            <li class="nav__items"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__items"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__items"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="logRegNav">
+            <a class="nav__link2" href="#">Login</a>
+            <a  class="nav__link2" href="#">Register</a>
+        </div>
+        </nav>
+        <div class="logRegHeader">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+
+    </header>
+</body>
+</html>

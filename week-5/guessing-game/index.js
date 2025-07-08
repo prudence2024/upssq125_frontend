@@ -6,4 +6,4 @@ const lowOrHigh =  document.querySelector(".lowOrHigh")
 const getSubmit = document.querySelector("getSubmit")
 const getFilled = document.querySelector("getFilled")
 let getCount = 1
-let resetButton = 
+let resetButton;
