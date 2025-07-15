@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.timer-wrapper{
+    margin-left: 3rem;
+    /* width: 95%; */
+    min-height: 100%;
+    place-items: center;
+    padding-bottom: 10rem;
+}
+.timer{
+    text-align: center;
+    margin: 3rem 2rem 0 0;
+    background-color: black;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.font-size-30{
+    font-size: 16rem;
+}
+.cl-white{
+    color: white;
+}
+.timer-controls{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.buttons{
+    padding: 8px 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.clr-red{
+    background-color:red;
+}
+.clr-green{
+    background-color: green;
+}
+.clr-blue{
+    background-color: blue;
+}
+.font-size-20{
+    font-size: 30px;
+}

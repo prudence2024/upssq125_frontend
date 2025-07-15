@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
+    <script src="index.js"></script>
 </head>
 <body>
     <div> 
         <h1>Variables</h1>
-        <p>Vaiables are containers for storing data, javascript variables can be declared in 4 ways:</p>
+        <p>Variables are containers for storing data, javascript variables can be declared in 4 ways:</p>
         <ol>
             <li>Automatically</li>
             <li>Using the var keyword.</li>
@@ -16,7 +17,7 @@
             <li>Using the Const keyword.</li>
         </ol>
         <p><strong>note:<strong> it is good practice to declare your variable before using them</p>
-        <p>Using var: var x=y; var x=5; note:strong> the var keyword was used in alll javascript code from 1995 till 2015, the let and const keyword where added to javascript in 2015. The var keyword should only be used for code written for older browsers.</p>
+        <p>Using var: var x=y; var x=5; note: the var keyword was used in alll javascript code from 1995 till 2015, the let and const keyword where added to javascript in 2015. The var keyword should only be used for code written for older browsers.</p>
         <p>Using let: let x=y; let x=5; only use let if you cant use const </p>
         <p>Using const: const x=y; const x=5; use const if the value should not be changed, use it for an array or object </p>
         <p>
@@ -43,9 +44,40 @@
 </div>
 
 <div>
-  <p>The equal sign is an assignment operator, not an equal to, this is different from mathematics algebra.
-  </p>  
+  <p>The equal sign is an assignment operator, not an equal to, this is different from mathematics algebra. the equal to operator in mathematics is written as == in javscript.
+  </p> 
+  <h3>Javascript Data Types</h3> 
+  <p>Javscript variables can hold numbers like 100 and text values like "goodluck jonathan". in programming, text values are called text strings, javscript can handle many typess of data but for now lets look at numbers and strings.Numbers are written without quotes. if you put a  number in quotes, it will be treated as a text string.Any variable declared with let have a block scope. Also any variable declared with let must be declared before use. Varaible declared in let can not be redeclared in the same scope.</p>
 </div>
 
+<div>
+    <h3>Block scope</h3>
+    <p>Before 2015, javscript didn't have block scope it only has globa and function scope. Scope in js refers to the accessibility or visibility of variables, in other words, where in your code the variable can be used.
+    </p>
+    <ol>
+        <li>Global Scope: Any variable declared after . They can be accesed any where in your code in the same file or context . Overuse global variables can cause problems.
+        </li>
+        <li>Function Scope: Any variable declaredinside a function are only accessible within that function.
+        </li>
+        <li>Block Scope: Any variable declared inside let or const inside a block are only acccesible within that block. note: var doesnt have a blockscope.
+        </li>
+    </ol>
+</div>
+
+<div>
+    <h3>Scope chain</h3>
+    <p>When accessing a variable. javascript searches inside the current scope whether it is block or function, when it doesnt find the value it goes upward to the parent scope and it continue until it. You can't redeclared a variable with let or const 
+
+    </p>
+</div>
+<p id="demo"></p>
+
+
+<!-- <script>
+    const pi = 3.14;
+    let person = "Prudence";
+    let answer = "Phoenix";
+    document.getElementById("demo").innerHTML = pi + "<br>" + person + "<br>" + answer
+</script> -->
 </body>
 </html>
