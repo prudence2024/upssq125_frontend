@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
-    <script src="index.js" type="module" ></script>
     <style>
-       .bglight{
-        background-color: rgb(0, 195, 255);
+        .bglight{
+            background-color: rgb(0, 195, 255);
        }
         .width1{
             max-width: 30em;
@@ -76,14 +75,16 @@
     <div class="form width1">
         <label for="guessField"></label>
         <input type="number" min="1" max="100" required id="guessField">
-        <input type="submit" value="Submit Guess" class="guessSubmit">
+        <input type="submit" value="submit Guess" class="guessSubmit">
     </div>
 
-    <div class="resultParas">
+    <div class="resetParas">
         <p class="guesses"></p>
         <p class="lastResult"></p>
         <p class="lowOrHigh"></p>
     </div>
 
+    <script src="./index.js" type="module" >
+    </script>
 </body>
 </html>
