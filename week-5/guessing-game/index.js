@@ -4,7 +4,7 @@ const guesses = document.querySelector(".guesses")
 const lastResult = document.querySelector(".lastResult")
 const lowOrHigh =  document.querySelector(".lowOrHigh")
 const guessSubmit = document.querySelector(".guessSubmit")
-const guessField = document.querySelector(".guessField")
+const guessField = document.querySelector("#guessField")
 let guessCount = 1
 let resetButton;
 
@@ -15,7 +15,7 @@ function checkGuess(){
     if(guessCount==1){
         guesses.textContent="previous guesses:"
     }
-    guessCount.textContent=`${guessCount.textContent} ${userGuess}`;
+    guesses.textContent += ` ${userGuess}`;
     // if conditional statement
     if(userGuess===randomNumber){
         lastResult.textContent="Congratulations! you got it right";
@@ -27,9 +27,9 @@ function checkGuess(){
         lowOrHigh.textContent="";
         setGameOver();
     }else{
-        lastResult.textContent="run";
+        lastResult.textContent="wrong";
         lastResult.style.backgroundColor="red";
-        if(userGuess>randomNumber){
+        if(userGuess<randomNumber){
             lowOrHigh.textContent="Last Guess was too low!!"
         }else if(userGuess>randomNumber){
             lowOrHigh.textContent="last Guess was too high"
@@ -38,8 +38,8 @@ function checkGuess(){
     guessCount++
     guessField.value="";
     guessField.focus();
-    guessSubmit.addEventListener("click",checkGuess)
 }
+guessSubmit.addEventListener("click",checkGuess)
 function setGame(){
     guessField.disabled=true;
     guessSubmit.disabled=true;

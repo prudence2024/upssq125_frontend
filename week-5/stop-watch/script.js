@@ -1,16 +1,17 @@
 // get all span Element
 const time1 = document.querySelector(".hours")
-const time2 = document.querySelector(".minuite")
+const time2 = document.querySelector(".minutes")
 const time3 = document.querySelector(".seconds")
-const stopTimer = document.querySelector(".stopTimer")
 const startTimer = document.querySelector(".startTimer")
-const resetTimer = document.querySelector(".resetTimer")
-let seconds = 0;
+const stopTimmer = document.querySelector(".stopTimer")
+const resetTimmer = document.querySelector(".resetTimer")
 let hours = 0;
 let minute = 0;
-let intervalid = null;
+let seconds = 0;
+let intervalId = null;
 const myTimer = () =>{
-    intervalid = setInterval(
+     if(intervalId) return;
+    intervalId = setInterval(
         () => {
             if (seconds === 60){
                 seconds = 0
@@ -29,3 +30,52 @@ const myTimer = () =>{
 startTimer.addEventListener("click",() =>{
     myTimer()
 })
+
+const stopTimer = () =>{
+    clearInterval(intervalId)
+        intervalId = null
+}
+stopTimmer.addEventListener("click", () =>{
+    stopTimer()
+}
+)
+
+const resetTimer = () => {
+    stopTimer();
+    seconds = 0
+    minute = 0
+    hours = 0
+    time1.textContent = `0${hours}`
+    time2.textContent = `0${minute}`
+    time3.textContent = `0${seconds}`
+}
+resetTimmer.addEventListener("click",() =>{
+    resetTimer();
+}
+ )
+
+
+
+// class Animal{
+//        name;
+//        constructor(name){
+//         this.name = name 
+//        }
+//        speak(){
+//         console.log(`${this.name}makesasound`)
+//        }
+//      }
+//     const elephant = new Animal("elephant")
+//     elephant.speak();
+// let sum = 0
+// setInterval(
+//     () =>{
+//         console.log(sum)
+//         sum+=1
+//     },
+//     1000
+//  )
+
+// let sugar=" ";
+// const checkValue = sugar ? "True" : "False"
+// console.log(checkValue)
