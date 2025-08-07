@@ -1,0 +1,21 @@
+
+[
+    {
+        "name":"sarah",
+        "age":50,
+        "email":"okwuborprudence@gmail.com",
+        "username":"okwubes"
+    },
+    {
+        "name":"tobi",
+        "age":50,
+        "email":"tobi@gmail.com",
+        "username":"tobi"
+    },
+    {
+        "name":"pomposki",
+        "age":50,
+        "email":"pomposki@gmail.com",
+        "username":"perowe"
+    }
+]

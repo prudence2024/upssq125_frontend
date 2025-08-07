@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Programming and Object-Oriented Programmming </title>
+</head>
+<body>
+
+    <h1>Functional Programming and Object-Oriented Programmming </h1>
+    <p>Functional Programming (Fp) and Object-Oriented Programmming (OOP) are 2 major programming paradigms each with a unique philosophy and approach to solving problems, javascript is a multi-paradigms meaning that it supports both fp and oop styles, understanding them help you write better and more maintainable code.  
+    </p>
+
+    <h2>Functional Programming (Fp)</h2>    
+    <p>Functional Programming is a programmming paradigm (approach or pattern or model or framework) where programs are built using pure functions and the state(all the data stored up by variables) and data are immutable(unchanging). It emphasises declarative code where logic is expressed without describing control flow.</p>
+
+    <h3>Core concept of in Fp</h3>
+    <ol>
+        <li>Pure Function: A function is pure if it always return the same output for the same input, if it does not cause side-effect(no i/o- writing to the console , reading user input, writing/reading files or databases, sending network request.) (A side effect is any observable interaction with the outside world, outside world or mutation outside the function e.g modifying a global variable, making an HTTP request, writing to the console/DOM, changing the file system.) if it doesn't affect the global state . 
+        </li>
+        <li>Immutablility: You don't modify existing data, you create and return new data.</li>
+        <li>First Class and higher order function: In javascript, functions are treated as any other value, you can assign them to variables, pass them as argument to other functions(callback functions), return them from other functions, this is what we mean as functions being first class citizen. </li>
+        <li>Higher Order functions: A higher order function is function that does at least one of the following. It takes one or more functions as argument, it returns a function, </li>
+        <li>function composition: combination small function</li>
+        <li>Avoid side effect</li>
+    </ol>
+
+    <h4>Benefit of Fp</h4>
+    <ol>
+        <li>It is easier to test and debug</li>
+        <li>It has predictable behaviour</li>
+        <li>Encourage small reusable functions</li>
+        <li>Easier concurrency(no shared mutable state)</li>
+    </ol>
+
+    <h3>OOP</h3>
+    <p>OOP is a programming paradigms that uses objects to model real world entities.Each object contains state(data) and behaviour(methods). The goal is to organise code into reusable blue print (classes).
+    </p>
+    <h3>Core concept of in OOP</h3>
+
+    <ol>
+        <li>Class: A class is a blue print. an object is an instance of a class</li>
+        <li>Encapsulation:It hides internal state and only exposes a public interface.</li>
+        <li>Inheritance: Objects can inherit properties from other object.</li>
+        <li>Polymorphism: This is similar to inheritance but different</li>
+        <li>Abstraction: It is about only the relevant features and hide the complex details</li>
+    </ol>
+
+    <h3>Benefit of Oop</h3>
+    <ul>
+        <li>Model(scaled down example of a system that has alll characteristics and features of  a system, it is a representation of data and the logic that manages that data in your application.It is the blueprint or template for how your application understand and manipulates certain kind of informatioon eg user, product, blog post. ) real world problems</li>
+        <li>Encapsulation:</li>
+        <li>Reusability</li>
+        <li>It is easily extensible</li>
+    </ul>
+
+   <table>
+        <th>
+            <td>Feature</td>
+            <td>functional programming</td>
+            <td>Object oriented programming</td>
+        </th>
+        <tr>
+            <td>core units</td>
+            <td>function</td>
+            <td>object</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>immuteable</td>
+            <td>muteable(Can be encapsulated)</td>
+        </tr>
+        <tr>
+            <td>state</td>
+            <td>Avoided(stateless)</td>
+            <td>Managed within objects</td>
+        </tr>
+        <tr>
+            <td>Behaviour</td>
+            <td>Pure functions</td>
+            <td>Method tied to objests</td>
+        </tr>
+        <tr>
+            <td>Side effects</td>
+            <td>Avoided</td>
+            <td>Can be present</td>
+        </tr>
+        <tr>
+            <td>inheritance</td>
+            <td>Function composition</td>
+            <td>Class based</td>
+        </tr>
+    </table>
+
+    <table>
+        <th>
+            <td>Situation</td>
+            <td>preferparadym</td>
+        </th>
+        <tr>
+            <td></td>
+            <td>modelling entity</td>
+        </tr>
+        <tr>
+            <td>For building re useable logic</td>
+            <td>functional programming</td>
+        </tr>
+        <tr>
+            <td>for building user interphase component</td>
+            <td>OOP/FP</td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
