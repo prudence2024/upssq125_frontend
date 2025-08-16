@@ -6,57 +6,148 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Homepage</title>
     <style>
-    ul{
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav{
+        display: flex;
+        align-items: center;
+      }
+    .nav-list{
       list-style-type: none;
-      margin: 0;
-     padding: 0;
-     display: inline;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      gap:2rem;
     }
-    li {
-  display: inline;
-}
+     a{
+      
+      padding: 16px;
+      text-decoration: none;
+    }
+    a:hover{
+      color: blue;
+    }
 
-li a {
-  color: blue;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
-nav{
-  display:inline;
-} 
-#firstdiv{
-  display: inline;
-}
-
+   header{
+    padding-top: 2rem;
+   }
+    #firstdiv > a{
+      text-decoration: none;
+    }
+    .list .weeks{
+      list-style: none;
+      display: none;
+      position:fixed;
+    }
+    .list:hover .weeks{
+      display: block;
+      gap: 2rem;;
+     
+    }
+    .new{
+      padding-top:2rem ;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      list-style: none;
+      gap: 2rem;
+    }
+    .portolio{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 2rem;
+      
+    }
+    
     </style>
 </head>
 <body>
-    <!-- MAIN HEADER -->
-    <header>
-
-      <div id="firstdiv"><a href="#">Logo</a></div>
-      <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./week-1/about.html">About</a></li>
-            <li><a href="./week-3/css-form/index.html">Form</a></li>
-             <li><a href="week-3/adaptive-website-design/index.html">AWS</a></li>
-             <li><a href="/week-3/css-font/font-family.html">Font-family</a></li>
-             <li><a href="week-3/css-form/index.">CSS-form</a></li>
-             <li><a href="week-3/media-query/index.html">Media query</a></li>
-             <!-- <li><a href="">RWD</a></li>
-             <li><a href="">RWD</a></li>
-             <li><a href="">RWD</a></li>
-             <li><a href="">RWD</a></li>
-             <li><a href="">RWD</a></li> -->
+  <!-- MAIN HEADER -->
+  <header>
+    <nav>
+      <div id="firstdiv"><a href="#"><b>Upssq125</b></a></div>
+      <ul class="nav-list">
+        <li><a href="./week-1/index.html">week1</a></li>
+        
+        <li class="list">
+          <a href="./week-2/index.html">week-2</a>
+          <ul class="weeks">
+            <li><a href="./week-2/css-selector/index.html">Css selector</a></li>
+            <li><a href="./week-2/float/index.html">Float</a></li>
+            <li><a href="./week-2/overflow/index.html">Overflow</a></li>
+            <li><a href="./week-2/positions/index.html">Position</a></li>
+            <li><a href="./week-2/z-index/index.html">Z-index</a></li>
           </ul>
-        </nav>
+            </li>
+
+            <li class="list">
+              <a href="./week-3/index.html">week-3</a>
+              <ul class="weeks">
+                <li><a href="./week-3/adaptive-website-design/">AWD</a></li>
+                <li><a href="./week-3/css-font/index.html">Font</a></li>
+                <li><a href="./week-3/css-form/index.html">Form</a></li>
+                <li><a href="./week-3/css-transform/index.html">Transform</a></li>
+                <li><a href="./week-3/flexbox/index.html">Flex</a></li>
+                <li><a href="./week-3/grid/index.html">Grid</a></li>
+                <li><a href="./week-3/media-query/index.html">media-query</a></li>
+              </ul>
+            </li>  
+            
+            
+            <li class="list">
+              <a href="./week-4/index.html">week-4</a>
+              <ul class="weeks">
+                <li><a href="./week-4/css-animations/index.html">Css-animation</a></li>
+                <li><a href="./week-4/css-grid-test/">CSS grid</a></li>
+                <li><a href="./week-4/portfolio/index.html">Portfolio</a></li>
+                <li><a href="./week-4/reponsive-web-layout/index.html">RWB</a></li>
+              </ul>
+            </li>
+            
+            <li class="list">
+              <a href="./week-5/index.html">week-5</a>
+              <ul class="weeks">
+                <li><a href="./week-5/functionalprogramming/index.html">FP</a></li>
+                <li><a href="./week-5/guessing-game/index.html">guessing-game</a></li>
+                <li><a href="./week-5/javascript/apis/index.html">javascript</a></li>
+                <li><a href="./week-5/js-comments/index.html">js-comments</a></li>
+                <li><a href="./week-5/jsfunctions/">jsfunctions</a></li>
+                <li><a href="./week-5/operators/index.html">operators</a></li>
+                <li><a href="./week-5/page-javascript/index.html">page-javascript</a></li>
+                <li><a href="./week-5/server-client/index.html">server-client</a></li>
+                <li><a href="./week-5/stop-watch/index.html">stop-watch</a></li>
+                <li><a href="./week-5/variable/index.html">variable</a></li>
+              </ul>
+            </li>
+        </ul>
+        <div class="portfolio">
+          <a href="https://prudence2024.github.io/prudence-portfolio/">Prudence-portfolio</a>
+        </div>
+      </nav>
     </header>
     <!-- MAIN HEADER ENDS -->
+    
+    
+    <!-- Sidebar -->
+    <section>
+      <div class="new-div">
+        <ul class="new">
+          <li><a href="./advanced-javascript/index.html">advanced js</a></li>
+          <li><a href="./ajax-jquery/index.html">ajax-jquery</a></li>
+          <li><a href="./async-await/index.html">async-await</a></li>
+          <li><a href="./asynchronous-javascript/">asynchronous-javascript</a></li>
+          <li><a href="./frontendmentor/browser-extensions-manager-ui-main/index.html">frontendmentor</a></li>
+          <li><a href="./promises/index.html">promises</a></li>
+        </ul>
+      </div>
+   
+    </section>
 </body>
 </html>

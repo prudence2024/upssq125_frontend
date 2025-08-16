@@ -16,6 +16,7 @@
     
 </head>
 <body>
+    <a href="/index.html">Home</a>
     <h1>bou</h1>
     <table id="result">
             <thead>
@@ -30,8 +31,44 @@
         <li>It has only one call stack</li>
         <li>It processes code synchronously by default</li>
     </ul>
-    <p>This single threaded nature makes javscript easier to use especially in browsers, but it poses a challenge</p>
+    <p>This single threaded nature makes javscript easier to use especially in browsers, but it poses a challenge and this is the challeng, how do you handle asynchronous task like fetching data or waiting for a time line</p>
+    <h2>Javascript execution system(runtime)</h2>
+    <p>To handle both synchronus and asynchronous operations, javscript run times like v8 in chrome or node.js include several component</p>
+    <ul>
+        <li>Call stack: this is where functions are executed line by line.</li>
+        <li>Web Apis / Node apis:Browser or node specific c++ apis that handles task like settimeout, fetch</li>
+        <li>Call back/task queue:task queue(callback queue/macro/queue):this store callbacks from web apis e.g ui events</li>
+        <li>Micro task queue:This store promises, queueMicroTask, and MutationObserver callbacks</li>
+        <li>Event loop:The event loop is the orchestrator, it checks if the call stack is empty, then pushes task from the queue into the stack. The event loop is the system that checks if the call stack is empty, if yes it runs all task in the Microtask queue then runs the first Microtask and finally it repeats forever</li>
+    </ul>
+    <h4>Loop order</h4>
+    <ul>
+        <li>Check if the callstack is empty</li>
+        <li> run all macro task</li>
+        <li>task one macro task from the task queue ad put it on the call stack</li>
+        <li>Execute it</li>
+        <li>Repeat</li>
+    </ul>
+     <script>
+        console.log("start")
+        setTimeout(()=>{
+        console.log("timeout")},0)
+        Promise.resolve().then(()=>{console.log("promise")})
+        console.log("end")
+        function A(){
+            B();
+        }
+        function B(){
+            setTimeout(()=>{C()},1000)
+        }
+        function C(){
+            debugger
+            console.log("inside c")
+        }
+        A();
 
-    <script src="script.js" type="module"></script>
+       
+     </script>
+    <!-- <script src="script.js" type="module"></script> -->
 </body>
 </html>
